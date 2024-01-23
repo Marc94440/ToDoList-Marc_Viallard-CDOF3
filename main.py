@@ -10,11 +10,23 @@ def AddToList(list):
             # Clearing the Screen
             os.system('cls')
         else:
-            print(task,"has been added\npress stop to exit")
+            print(task,"has been added\nwrite stop to exit")
             list.append([task,"False"])
 
 def DeleteTask(list):
-    print("TODO")
+    Tasks_delete_display(list)
+    number = input("Which task do you want to delete: ")
+    try:
+        number = int(number)
+        if 1 <= number <= len(list):
+            list.pop(number - 1)
+            print("The task has been deleted.")
+        else:
+            print("Invalid task number.")
+    except ValueError:
+        print("Please enter a valid number.")
+    
+    exit = input("Type anything to exit")
 
 def CompleteTask(list):
     DisplayTasks(list)
@@ -24,6 +36,18 @@ def CompleteTask(list):
             print("The task number :",completenumber,"will be completed")
             list[int(completenumber)+1][1]="True"
     print("TODO")
+
+
+def Tasks_delete_display(list):
+    os.system('cls')
+    count = 1
+    for element in list:
+        if(element[1]=="False"):
+            print("[]"+str(count)+". ",element[0]+"\n")
+        else:
+            print("[X]"+str(count)+". ",element[0]+"\n")
+        count+=1
+
 
 def DisplayTasks(list):
     os.system('cls')
