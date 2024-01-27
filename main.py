@@ -32,9 +32,9 @@ def CompleteTask(list):
     DisplayTasks(list)
     completenumber=input("Which task do you want to complete : ")
     for element in range(len(list)):
-        if(int(completenumber)< len(list)):
+        if(int(completenumber)<= len(list)):
             print("The task number :",completenumber,"will be completed")
-            list[int(completenumber)+1][1]="True"
+            list[int(completenumber)-1][1]="True"
     print("TODO")
 
 
