@@ -13,10 +13,27 @@ Here you can see your tasks:
 ![image](https://github.com/yannvillellas/ToDoList-Marc_Viallard-CDOF3/assets/95702481/82354c24-5c73-4e20-b55f-02cdc1520e5e)
 
 ## Run the project
-To run the app, you only have to type the following command in the terminal, in the project's folder:
-```bash
+
+Follow these step-by-step instructions to get a development environment running:
+
+Clone the repository:
+```
+git clone git@github.com:Marc94440/ToDoList-Marc_Viallard-CDOF3.git
+```
+
+Navigate to the project directory:
+```
+cd ToDoList-Marc_Viallard-CDOF3
+```
+
+Run the application with this command:
+```
 python main.py
 ```
+
+## Contributing
+
+For details on our code of conduct and the process for submitting pull requests, please refer to the CONTRIBUTING.md document: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Credit
 
