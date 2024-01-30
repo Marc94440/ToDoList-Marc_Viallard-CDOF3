@@ -6,11 +6,11 @@ Here you can see how the console looks like.
 
 This is the main page of the app:
 
-![image](https://github.com/yannvillellas/ToDoList-Marc_Viallard-CDOF3/assets/95702481/40961614-ff03-4e8b-9dd2-af90777e770d)
+![image](https://github.com/Marc94440/ToDoList-Marc_Viallard-CDOF3/assets/95702481/779b1c2f-3b22-4a6e-8ef0-417b2d2c8d9a)
 
 Here you can see your tasks:
 
-![image](https://github.com/yannvillellas/ToDoList-Marc_Viallard-CDOF3/assets/95702481/82354c24-5c73-4e20-b55f-02cdc1520e5e)
+![image](https://github.com/Marc94440/ToDoList-Marc_Viallard-CDOF3/assets/95702481/7b4a024b-fe4d-4eb8-b16f-c3285736af04)
 
 ## Run the project
 
