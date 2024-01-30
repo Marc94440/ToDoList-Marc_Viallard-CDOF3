@@ -2,13 +2,13 @@ import os
  
 
 def AddToList(list):
-    os.system('cls')
+    os.system('clear')
     task=""
     while(task!="stop"):   
         task=input("Enter a task:")
         if(task=="stop"):
             # Clearing the Screen
-            os.system('cls')
+            os.system('clear')
         else:
             print(task,"has been added\nwrite stop to exit")
             list.append([task,"False"])
@@ -39,7 +39,7 @@ def CompleteTask(list):
 
 
 def Tasks_delete_display(list):
-    os.system('cls')
+    os.system('clear')
     count = 1
     for element in list:
         if(element[1]=="False"):
@@ -50,7 +50,7 @@ def Tasks_delete_display(list):
 
 
 def DisplayTasks(list):
-    os.system('cls')
+    os.system('clear')
     count = 1
     for element in list:
         if(element[1]=="False"):
@@ -77,9 +77,8 @@ def OpenSave(list):
         print("No list found, let's create a new one\n")
 
 def Menu(list):
-    os.system('cls')
+    os.system('clear')
     print(10*"-"+"     Welcome to the to do list app     "+10*"-"+"\n")
-    OpenSave(list)
     print("Add a task to the to do list : Type 1\n")
     print("Delete a task in the to do list : Type 2\n")
     print("Complete a task in the to do list : Type 3\n")
@@ -112,8 +111,9 @@ def Menu(list):
             Menu(list)
 
 if __name__ == "__main__":
-    os.system('cls')
+    os.system('clear')
     list=[]
+    OpenSave(list)
     Menu(list)
     SaveTasks(list)
 
